@@ -13111,3 +13111,69 @@ input[type=number] {
 
 /*---------------------------------------------------- */
 /*# sourceMappingURL=style.css.map */
+
+.breadcrumb_area:before {
+  background: none;
+}
+
+.client_feedback_area {
+  background: url(../img/feedback-bg.png) no-repeat scroll center center;
+  background-size: cover;
+}
+
+.client_item p {
+		font: normal italic 20px/34px "Barlow", sans-serif;
+		color: white;
+		margin-bottom: 50px;
+		position: relative;
+		padding-top: 35px;
+}
+
+
+.client_item h4 {
+  font: bold 20px/34px "Barlow", sans-serif;
+  color: #ff2a39;
+  margin-bottom: 10px:
+}
+
+.flag_center_title h2 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0px;
+    font: bold 44px "Barlow", sans-serif;
+    color: #ff2a39;
+    display: inline-block;
+}
+
+.client_item h5 {
+  font: normal 16px "Barlow", sans-serif;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.ab_footer {
+  background: url(../img/ab-footer-bg.png) no-repeat scroll center center;
+  background-size: cover;
+}
+
+.contact_directly_area .contact_directly_bg {
+  background: url(../img/All-cars-image-2.png) no-repeat scroll center center;
+  background-size: cover;
+  position: relative;
+}
+
+.client_feedback_area1 {
+  background: url(../img/feedback-bg1.png) no-repeat scroll center center;
+  background-size: cover;
+}
+
+.p_1001 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.custom-p {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 0px;
+}

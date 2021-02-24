@@ -214,7 +214,11 @@
 	padding-left: 100px;
 	padding-right: 100px;
 	.contact_directly_bg{
-		background: url(../img/c-directly-bg.png) no-repeat scroll center center;
+		.contact_directly_area .contact_directly_bg {
+			background: url(../img/c-directly-bg.jpg) no-repeat scroll center center;
+			background-size: cover;
+			position: relative;
+		}
 		background-size: cover;
 		position: relative;
 		.reg_form_inner{
