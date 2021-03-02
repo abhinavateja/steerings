@@ -13186,6 +13186,9 @@ input[type=number] {
   font-size: 2rem !important;
 }
 
+.number {
+  background-color: #ff2a39 !important;
+}
 
 
 
