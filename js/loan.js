@@ -1,81 +1,39 @@
-function myFunction() {
-  var loan = $("#amount").val(),
-    month = $("#months").val(),
-    int = $("#interest").val(),
-    years = $("#years").val(),
-    down = $("#down").val(),
-    amount = parseInt(loan),
-    months = parseInt(month),
-    down = parseInt(down),
-    annInterest = parseFloat(int),
-    monInt = annInterest / 1200,
-    calculation = (
-      (monInt + monInt / (Math.pow(1 + monInt, months) - 1)) *
-      (amount - (down || 0))
-    ).toFixed(2);
+document.getElementById("loan-form").addEventListener("submit", computeResults);
 
-  document.getElementById("output").innerHTML = calculation;
+function computeResults(e) {
+  // UI
+
+  const UIamount = document.getElementById("amount").value;
+  const UIinterest = document.getElementById("interest").value;
+  const UIyears = document.getElementById("years").value;
+
+  // Calculate
+
+  const principal = parseFloat(UIamount);
+  const CalculateInterest = parseFloat(UIinterest) / 100 / 12;
+  const calculatedPayments = parseFloat(UIyears) * 12;
+
+  //Compute monthly Payment
+
+  const x = Math.pow(1 + CalculateInterest, calculatedPayments);
+  const monthly = (principal * x * CalculateInterest) / (x - 1);
+  const monthlyPayment = monthly.toFixed(2);
+
+  //Compute Interest
+
+  const totalInterest = (monthly * calculatedPayments - principal).toFixed(2);
+
+  //Compute Total Payment
+
+  const totalPayment = (monthly * calculatedPayments).toFixed(2);
+
+  //Show results
+
+  document.getElementById("monthlyPayment").innerHTML = "INR" + monthlyPayment;
+
+  document.getElementById("totalInterest").innerHTML = "INR" + totalInterest;
+
+  document.getElementById("totalPayment").innerHTML = "INR" + totalPayment;
+
+  e.preventDefault();
 }
-
-$(function () {
-  var month = $(this).val(),
-    doneTypingInterval = 500,
-    months = parseInt(month),
-    typingTimer;
-
-  $("#months").keyup(function () {
-    month = $(this).val();
-    months = parseInt(month);
-
-    clearTimeout(typingTimer);
-    if (month) {
-      typingTimer = setTimeout(doneTyping, doneTypingInterval);
-    }
-  });
-
-  function doneTyping() {
-    $("#years").val(months / 12);
-  }
-});
-
-$(function () {
-  var month = $(this).val(),
-    doneTypingInterval = 500,
-    months = parseInt(month),
-    typingTimer;
-
-  $("#months").keyup(function () {
-    month = $(this).val();
-    months = parseInt(month);
-
-    clearTimeout(typingTimer);
-    if (month) {
-      typingTimer = setTimeout(doneTyping, doneTypingInterval);
-    }
-  });
-
-  function doneTyping() {
-    $("#years").val(months / 12);
-  }
-});
-
-$(function () {
-  var year = $(this).val(),
-    doneTypingInterval = 500,
-    years = parseInt(year),
-    typingTimer;
-
-  $("#years").keyup(function () {
-    year = $(this).val();
-    myears = parseInt(year);
-
-    clearTimeout(typingTimer);
-    if (year) {
-      typingTimer = setTimeout(doneTyping, doneTypingInterval);
-    }
-  });
-
-  function doneTyping() {
-    $("#months").val(year * 12);
-  }
-});
