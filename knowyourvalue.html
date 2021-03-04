@@ -98,59 +98,17 @@
         <!--================End Breadcrumb Area =================-->
         
         <!--================End Breadcrumb Area =================-->
-        <section class="contact_information p_100">
-        	<div class="container">
-        		<div class="flag_center_title wow animated fadeInUp" data-wow-delay="0.2s">
-        			<h2><img src="img/icon/flag-2.png" alt=""> Contact Information</h2>
-        		</div>
-        		<div class="row contact_info_inner justify-content-center">
-        			<div class="col-lg-4 col-sm-6 wow animated fadeIn" data-wow-delay="0.2s">
-        				<div class="contact_info_item">
-        					<i class="icon-map_marker"></i>
-        					<h4>Location</h4>
-        					<p>915 Hilldale Lane Maryville, TN<br /> 37803, United States</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-sm-6 wow animated fadeIn" data-wow-delay="0.4s">
-        				<div class="contact_info_item">
-        					<i class="icon-phone1"></i>
-        					<h4>Contact Number</h4>
-        					<h5><a href="tel:+8801676790690">+91 386-454-0624</a> <span>(Showroom)</span></h5>
-        					<h5><a href="tel:+8801676790690">+91 386-433-9096</a> <span>(Service Center)</span></h5>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-sm-6 wow animated fadeIn" data-wow-delay="0.6s">
-        				<div class="contact_info_item">
-        					<i class="icon-envelop"></i>
-        					<h4>Mail Addres</h4>
-        					<h5><a href="mailto:contact.dealer@example.com">contact.dealer@example.com</a></h5>
-        					<h5><a href="mailto:servicecenter@domain.com">servicecenter@domain.com</a></h5>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
+		
         <!--================End Breadcrumb Area =================-->
         
         <!--================End Banner Area =================-->
-        <section class="map_area">
-			<div id="mapBox" class="mapBox row m0" 
-				data-lat="40.701083" 
-				data-lon="-74.1522848" 
-				data-zoom="12" 
-				data-marker="img/icon/marker.png"  
-				data-info="54B, Tailstoi Town 5238 La city, IA 522364"
-				data-mlat="40.701083"
-				data-mlon="-74.1522848">
-			</div>
-        </section>
         <!--================End Banner Area =================-->
         
         <!--================Main contact Area =================-->
         <section class="main_contact_area p_100">
         	<div class="container">
         		<div class="flag_center_title wow animated fadeInUp" data-wow-delay="0.2s">
-        			<h2><img src="img/icon/flag-2.png" alt="">Contact us</h2>
+        			<h2><img src="img/icon/flag-2.png" alt="">Know your existing car value</h2>
         		</div>
         		<div class="main_contact_inner">
         			<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
@@ -163,8 +121,14 @@
 						<div class="form-group col-md-4">
 							<input type="email" class="form-control" id="email" name="email" placeholder="Email">
 						</div>
-						<div class="form-group col-md-12">
-							<textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+						<div class="form-group col-md-4">
+							<input type="text" class="form-control" name="brand" id="brand" placeholder="Brand of your car">
+						</div>
+						<div class="form-group col-md-4">
+							<input type="text" class="form-control" name="model" id="model" placeholder="Model"></input>
+						</div>
+						<div class="form-group col-md-4">
+							<input type="text" class="form-control" name="mfg-year" id="mfg-year" placeholder="Manufacturing Year ">
 						</div>
 						<div class="form-group col-md-12">
 							<button type="submit" value="submit" class="btn submit_btn red form-control">Send now</button>
@@ -176,7 +140,46 @@
         	</div>
         </section>
         <!--================End Main contact Area =================-->
-        
+        <section class="contact_information p_100">
+        	<div class="container">
+        		<div class="row contact_info_inner">
+        			<div class="col-lg-3 col-sm-6 wow animated fadeIn" data-wow-delay="0.2s">
+        				<div class="contact_info_item">
+        					<i class="icon-map_marker"></i>
+        					<h4>Location</h4>
+        					<p>Plot #565-D-<span>&#8544;</span><span>&#8544;</span><span>&#8544;</span>, Road No.92, Near Starbucks Coffee Shop,Jubliee Hills, Hyderabad-34<br />  India</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6 wow animated fadeIn" data-wow-delay="0.4s">
+        				<div class="contact_info_item">
+        					<i class="icon-phone1"></i>
+        					<h4>Contact Number</h4>
+							<h5><a href="tel:+91 910-088-0041">+91 910-088-0041</a> <span></span></h5>
+							<h5><a href="tel:+91 910-088-0044">+91 910-088-0044</a> <span></span></h5>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6 wow animated fadeIn" data-wow-delay="0.6s">
+        				<div class="contact_info_item">
+        					<i class="icon-envelop"></i>
+        					<h4>Mail Addres</h4>
+        					<h5><a href="mailto:sales@steerings.in">sales@steerings.in</a></h5>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6 wow animated fadeIn" data-wow-delay="0.8s">
+        				<div class="contact_info_item">
+        					<i class="icon-social"></i>
+        					<h4>Social Profiles</h4>
+        					<ul class="nav justify-content-center">
+        						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        					</ul>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
         <!--================Footer Area =================-->
         <footer class="footer_area red_footer_area ab_footer">
         	<div class="footer_widgets">
@@ -184,44 +187,40 @@
         			<div class="row f_widgets_inner">
         				<div class="col-lg-3 col-sm-6 wow animated fadeInUp" data-wow-delay="0.2s">
         					<aside class="f_widget about_widget">
-        						<a class="f_logo" href="index.html"><img src="img/repair-logo.png" srcset="img/repair-logo-2x.png 2x" alt="bar"></a>
-        						<p><i class="icon-map_marker_2" aria-hidden="true"></i> Wave, Via Habro Derennio 22/b 52100 Arezzo, Italy</p>
-        						<a href="mailto:ask@example.com"><i class="icon-envelop_2" aria-hidden="true"></i> ask@example.com</a>
-        						<a href="tel:0951856558"><i class="icon-phone_2" aria-hidden="true"></i> 095 1856 558 (Toll Free)</a>
+        						<a class="f_logo" href="index.html"><img src="img/logo-steerings.png" alt="bar"></a>
+        						<p><i class="icon-map_marker_2" aria-hidden="true"></i> Jubliee Hills, Hyderabad-34, Telangana State, India</p>
+        						<a href="mailto:sales@steerings.in"><i class="icon-envelop_2" aria-hidden="true"></i> sales@steerings.in</a>
+								<a href="tel:+91 9100880044"><i class="icon-phone_2" aria-hidden="true"></i> +91 910 0880 044</a>
+								<a href="tel:+91 9100880044"><i class="icon-phone_2" aria-hidden="true"></i> +91 910 0880 041</a>
+								
         					</aside>
         				</div>
         				<div class="col-lg-2 col-sm-6 wow animated fadeInUp" data-wow-delay="0.4s">
         					<aside class="f_widget link_widget">
         						<div class="f_title">
-        							<h3>Our info</h3>
+        							<h3>Informations</h3>
         						</div>
         						<ul class="nav flex-column">
-        							<li><a href="#">About us</a></li>
-        							<li><a href="#">Our Services</a></li>
-        							<li><a href="#">Our Shop</a></li>
-        							<li><a href="#">Blog</a></li>
-        							<li><a href="#">Contact us</a></li>
+        							<li><a href="#">Trade-in-value</a></li>
+        							<li><a href="Finance.html">Financing</a></li>
         						</ul>
         					</aside>
         				</div>
         				<div class="col-lg-3 col-sm-6 wow animated fadeInUp" data-wow-delay="0.6s">
         					<aside class="f_widget link_widget">
         						<div class="f_title">
-        							<h3>Quick Link</h3>
+        							<h3>Other Services</h3>
         						</div>
         						<ul class="nav flex-column">
-        							<li><a href="#">Private Policy</a></li>
-        							<li><a href="#">Team & Conditions</a></li>
-        							<li><a href="#">Copyright Notification</a></li>
-        							<li><a href="#">Private Policy</a></li>
-        							<li><a href="#">Team & Conditions</a></li>
+        							<li><a href="insurance.html">Insurance</a></li>
+        							<li><a href="Finance.html">Financial Services</a></li>
         						</ul>
         					</aside>
         				</div>
         				<div class="col-lg-4 col-sm-6 wow animated fadeInUp" data-wow-delay="0.8s">
         					<aside class="f_widget subscribe_widget">
         						<div class="f_title">
-        							<h3>Subscribe us</h3>
+        							<h3>Contact us</h3>
         						</div>
 								<div class="input-group">
 									<input type="text" class="form-control" placeholder="Your email">
@@ -240,28 +239,11 @@
         			</div>
         		</div>
         	</div>
-        	<div class="footer_card wow animated fadeIn" data-wow-delay="0.4s">
-        		<div class="container">
-        			<div class="f_card_inner d-flex justify-content-between">
-        				<div class="left">
-        					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed them eiusmod tempor<br /> incididunt labore et dolorie magna aliqua.</p>
-        				</div>
-        				<div class="right">
-        					<ul class="nav">
-        						<li><a href="#"><img src="img/icon/card-1.png" alt=""></a></li>
-        						<li><a href="#"><img src="img/icon/card-2.png" alt=""></a></li>
-        						<li><a href="#"><img src="img/icon/card-3.png" alt=""></a></li>
-        						<li><a href="#"><img src="img/icon/card-4.png" alt=""></a></li>
-        					</ul>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
         	<div class="footer_copyright">
         		<div class="container">
         			<div class="copyright_inner d-flex justify-content-between">
         				<div class="left">
-        					<p>Copyright Reserved by <a href="index.html">Droitthems </a> <script>document.write(new Date().getFullYear());</script></p>
+        					<p>Copyright Reserved by <a href="index.html">Steerings </a> <script>document.write(new Date().getFullYear());</script></p>
         				</div>
         				<div class="right">
         					<ul class="nav">

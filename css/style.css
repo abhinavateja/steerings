@@ -13201,4 +13201,18 @@ input[type=number] {
 .danger {background-color: #f44336;} /* Red */ 
 .other {background-color: #e7e7e7; color: black;} /* Gray */ 
 
+.glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fb3d3d, 0 0 40px #fb3d3d, 0 0 50px #fb3d3d, 0 0 60px #fb3d3d, 0 0 70px #fb3d3d;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px  #ff2a39, 0 0 40px #ff2a39, 0 0 50px  #ff2a39, 0 0 60px  #ff2a39, 0 0 70px  #ff2a39, 0 0 80px  #ff2a39;
+  }
+}
