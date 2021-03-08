@@ -38,9 +38,6 @@
 		display: flex !important;
 		align-items: center;
 		position: relative;
-		.container{
-			
-		}
 		.slider_text{
 			margin-top: -100px;
 			img{
@@ -379,7 +376,6 @@
 			.slider_text{
 				position: relative;
 				&:before{
-					content: "B";
 					font-size: 500px;
 					color: #fff;
 					position: absolute;

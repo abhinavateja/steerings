@@ -13216,3 +13216,19 @@ input[type=number] {
     text-shadow: 0 0 20px #fff, 0 0 30px  #ff2a39, 0 0 40px #ff2a39, 0 0 50px  #ff2a39, 0 0 60px  #ff2a39, 0 0 70px  #ff2a39, 0 0 80px  #ff2a39;
   }
 }
+
+.slider_item .slider_text{
+  position: relative;
+}
+  
+.main_slider .slider_item .image_overlay {
+  height: 68% !important;
+  width: 99% !important;
+}
+
+.badge-success {
+    font-size: 15px !important;
+    margin-bottom: 5px !important;
+    color: #fff !important;
+    background-color: #28a745 !important;
+}
