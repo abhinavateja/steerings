@@ -1,6 +1,6 @@
 <?php
 
-    $to = "inova.theme@gmail.com";
+    $to = "abhinavateja@bigcardindia.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $csubject = $_REQUEST['number'];
@@ -12,7 +12,7 @@
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from your Saasland.";
+    $subject = "You have a message from your Steerings.";
 
     $logo = '';
     $link = '#';
