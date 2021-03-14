@@ -4,7 +4,11 @@
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $csubject = $_REQUEST['number'];
-    $cmessage = $_REQUEST['message'];
+	$cmessage = $_REQUEST['message'];
+	$cbrandofcar = $_REQUEST['brand'];
+	$cmodel = $_REQUEST['model'];
+	$cmfg = $_REQUEST['mfg-year'];
+	$ckms = $_REQUEST['kms'];
 
     $headers = "From: $from";
 	$headers = "From: " . $from . "\r\n";
@@ -25,6 +29,11 @@
 	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
 	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
 	$body .= "</tr>";
+	$body .= "<tr><td style='border:none;'><strong>Brand:</strong> {$cbrandofcar}</td></tr>";
+	$body .= "</tr>";
+	$body .= "<tr><td style='border:none;'><strong>Model:</strong> {$cmodel}</td></tr>";
+	$body .= "<tr><td style='border:none;'><strong>Mfg-Year:</strong> {$cmfg}</td></tr>";
+	$body .= "<tr><td style='border:none;'><strong>Kms Driven:</strong> {$ckms}</td></tr>";
 	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
 	$body .= "<tr><td></td></tr>";
 	$body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
