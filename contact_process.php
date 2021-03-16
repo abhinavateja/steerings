@@ -9,6 +9,7 @@
 	$cmodel = $_REQUEST['model'];
 	$cmfg = $_REQUEST['mfg-year'];
 	$ckms = $_REQUEST['kms'];
+	$creg = $_REQUEST['reg'];
 
     $headers = "From: $from";
 	$headers = "From: " . $from . "\r\n";
@@ -34,7 +35,9 @@
 	$body .= "<tr><td style='border:none;'><strong>Model:</strong> {$cmodel}</td></tr>";
 	$body .= "<tr><td style='border:none;'><strong>Mfg-Year:</strong> {$cmfg}</td></tr>";
 	$body .= "<tr><td style='border:none;'><strong>Kms Driven:</strong> {$ckms}</td></tr>";
-	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
+	$body .= "<tr><td style='border:none;'><strong>Kms Driven:</strong> {$ckms}</td></tr>";
+	$body .= "<tr><td style='border:none;'><strong>Kms Driven:</strong> {$ckms}</td></tr>";
+	$body .= "<tr><td style='border:none;'><strong>State of Registration:</strong> {$creg}</td></tr>";
 	$body .= "<tr><td></td></tr>";
 	$body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
 	$body .= "</tbody></table>";
