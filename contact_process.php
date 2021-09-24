@@ -1,6 +1,6 @@
 <?php
 
-    $to = "sales@steerings.in";
+    $to = "abhinavateja@bigcardindia.com, info@bigcardindia.com, abhinavateja2021@gmail.com ";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $csubject = $_REQUEST['number'];
