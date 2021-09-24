@@ -1,6 +1,6 @@
 <?php
 
-    $to = "abhinavateja@bigcardindia.com, info@bigcardindia.com";
+    $to = "abhinavateja@bigcardindia.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $csubject = $_REQUEST['number'];
